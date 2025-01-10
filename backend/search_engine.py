@@ -11,7 +11,7 @@ def create_search_engine():
         raise ValueError("Hugging Face API token is missing. Please set the HUGGINGFACEHUB_API_TOKEN environment variable.")
     
     # Initialize the retriever with Tavily API key
-    retriever = TavilySearchAPIRetriever(api_key="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")
+    retriever = TavilySearchAPIRetriever(api_key="")
 
     # Initialize Mistral LLM via HuggingFaceHub and pass the token explicitly
     llm = HuggingFaceHub(
