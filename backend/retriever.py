@@ -19,6 +19,6 @@ def web_search(query: str) -> str:
     """
     This tool will be used within the LangChain process to fetch relevant documents.
     """
-    retriever = WebSearchRetriever(api_key="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")
+    retriever = WebSearchRetriever(api_key="")
     documents = retriever.retrieve(query)
     return "\n".join(documents)
